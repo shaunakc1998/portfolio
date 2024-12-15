@@ -57,11 +57,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-section d-flex align-items-center">
+    <section
+      id="hero"
+      class="hero-section d-flex align-items-center text-center text-md-start"
+    >
       <div class="container">
         <div class="row align-items-center">
           <!-- Text Content -->
-          <div class="col-lg-6 text-center text-lg-start">
+          <div class="col-md-6 mb-4 mb-md-0">
             <h1 class="display-4 fw-bold">
               Create <span class="highlight"></span><br />
               That Matter
@@ -76,11 +79,11 @@
             </div>
           </div>
           <!-- Image Content -->
-          <div class="col-lg-6 text-center">
+          <div class="col-md-6">
             <img
               src="assets/cari.webp"
               alt="Your Profile"
-              class="img-fluid shadow-lg"
+              class="img-fluid shadow-lg rounded-circle"
             />
           </div>
         </div>
@@ -88,10 +91,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section
-      id="experience"
-      class="experience-section d-flex align-items-center"
-    >
+    <section id="experience" class="experience-section py-5">
       <div class="container">
         <h2 class="section-title text-center mb-5">Experience</h2>
         <div class="timeline">
@@ -687,155 +687,179 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section py-5">
       <div class="container">
+        <!-- Section Title -->
         <h2 class="section-title text-center mb-5">Projects</h2>
-        <div class="row g-4">
+
+        <!-- Project Cards Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <!-- Project 1 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card project-card text-center">
+          <div class="col">
+            <div class="card project-card h-100 text-center">
               <div class="project-img-wrapper">
-                <img src="assets/brandkit.webp" alt="AI BrandKit Generator" />
+                <img
+                  src="assets/brandkit.webp"
+                  alt="AI BrandKit Generator"
+                  class="img-fluid"
+                />
               </div>
-              <div class="card-body">
-                <h5 class="project-title fw-bold">AI BrandKit Generator</h5>
+              <div class="card-body d-flex flex-column">
+                <h5 class="project-title fw-bold mb-3">
+                  AI BrandKit Generator
+                </h5>
                 <a
                   href="https://github.com/shaunakc1998/brandkit-ai"
                   target="_blank"
-                  class="btn btn-primary btn-sm mt-2"
+                  class="btn btn-primary btn-sm mt-auto"
                 >
-                  <i class="fab fa-github"></i> View on GitHub
+                  <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
               </div>
             </div>
           </div>
+
           <!-- Project 2 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card project-card text-center">
+          <div class="col">
+            <div class="card project-card h-100 text-center">
               <div class="project-img-wrapper">
                 <img
                   src="assets/recipe.webp"
-                  alt="AI Driven Recipe Generator"
+                  alt="AI Recipe Generator"
+                  class="img-fluid"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="project-title fw-bold">
+              <div class="card-body d-flex flex-column">
+                <h5 class="project-title fw-bold mb-3">
                   AI Driven Recipe Generator
                 </h5>
                 <a
                   href="https://github.com/shaunakc1998/brandkit-ai"
                   target="_blank"
-                  class="btn btn-primary btn-sm mt-2"
+                  class="btn btn-primary btn-sm mt-auto"
                 >
-                  <i class="fab fa-github"></i> View on GitHub
+                  <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
               </div>
             </div>
           </div>
+
           <!-- Project 3 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card project-card text-center">
+          <div class="col">
+            <div class="card project-card h-100 text-center">
               <div class="project-img-wrapper">
                 <img
                   src="assets/dht.webp"
                   alt="Chord Algorithm File Sharing System"
+                  class="img-fluid"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="project-title fw-bold">
+              <div class="card-body d-flex flex-column">
+                <h5 class="project-title fw-bold mb-3">
                   Chord Algorithm File Sharing System
                 </h5>
                 <a
                   href="https://github.com/shaunakc1998/brandkit-ai"
                   target="_blank"
-                  class="btn btn-primary btn-sm mt-2"
+                  class="btn btn-primary btn-sm mt-auto"
                 >
-                  <i class="fab fa-github"></i> View on GitHub
+                  <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
               </div>
             </div>
           </div>
+
           <!-- Project 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card project-card text-center">
+          <div class="col">
+            <div class="card project-card h-100 text-center">
               <div class="project-img-wrapper">
                 <img
                   src="assets/market.webp"
                   alt="Marketing & Profitability Analysis"
+                  class="img-fluid"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="project-title fw-bold">
+              <div class="card-body d-flex flex-column">
+                <h5 class="project-title fw-bold mb-3">
                   Marketing & Profitability Analysis
                 </h5>
                 <a
                   href="https://github.com/shaunakc1998/brandkit-ai"
                   target="_blank"
-                  class="btn btn-primary btn-sm mt-2"
+                  class="btn btn-primary btn-sm mt-auto"
                 >
-                  <i class="fab fa-github"></i> View on GitHub
+                  <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
               </div>
             </div>
           </div>
+
           <!-- Project 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card project-card text-center">
+          <div class="col">
+            <div class="card project-card h-100 text-center">
               <div class="project-img-wrapper">
                 <img
                   src="assets/tiffeasts.webp"
                   alt="Tiffeasts Wireframe Designs"
+                  class="img-fluid"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="project-title fw-bold">
+              <div class="card-body d-flex flex-column">
+                <h5 class="project-title fw-bold mb-3">
                   Tiffeasts Wireframe Design
                 </h5>
                 <a
                   href="https://github.com/shaunakc1998/brandkit-ai"
                   target="_blank"
-                  class="btn btn-primary btn-sm mt-2"
+                  class="btn btn-primary btn-sm mt-auto"
                 >
-                  <i class="fab fa-github"></i> View on GitHub
+                  <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
               </div>
             </div>
           </div>
+
           <!-- Project 6 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card project-card text-center">
+          <div class="col">
+            <div class="card project-card h-100 text-center">
               <div class="project-img-wrapper">
                 <img
                   src="assets/image.webp"
                   alt="Image Processing and Detection Pipeline"
+                  class="img-fluid"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="project-title fw-bold">
+              <div class="card-body d-flex flex-column">
+                <h5 class="project-title fw-bold mb-3">
                   Image Processing and Detection Pipeline
                 </h5>
                 <a
                   href="https://github.com/shaunakc1998/brandkit-ai"
                   target="_blank"
-                  class="btn btn-primary btn-sm mt-2"
+                  class="btn btn-primary btn-sm mt-auto"
                 >
-                  <i class="fab fa-github"></i> View on GitHub
+                  <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
               </div>
             </div>
           </div>
+
           <!-- Project 7 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card project-card text-center">
+          <div class="col">
+            <div class="card project-card h-100 text-center">
               <div class="project-img-wrapper">
-                <img src="assets/scuflix.webp" alt="SCUFlix" />
+                <img
+                  src="assets/scuflix.webp"
+                  alt="SCUFlix"
+                  class="img-fluid"
+                />
               </div>
-              <div class="card-body">
-                <h5 class="project-title fw-bold">SCUFlix</h5>
+              <div class="card-body d-flex flex-column">
+                <h5 class="project-title fw-bold mb-3">SCUFlix</h5>
                 <a
                   href="https://github.com/shaunakc1998/brandkit-ai"
                   target="_blank"
-                  class="btn btn-primary btn-sm mt-2"
+                  class="btn btn-primary btn-sm mt-auto"
                 >
-                  <i class="fab fa-github"></i> View on GitHub
+                  <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
               </div>
             </div>

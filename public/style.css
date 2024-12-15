@@ -57,6 +57,7 @@ section {
 
 /* Hamburger Menu */
 .hamburger {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -64,6 +65,7 @@ section {
   background: transparent;
   border: none;
   outline: none;
+  z-index: 1001;
 }
 
 .hamburger span {
@@ -78,28 +80,30 @@ section {
   background: #007bff;
 }
 
-/* Mobile Menu */
+/* Mobile Menu - Initially Hidden */
 .mobile-menu {
-  position: fixed;
+  position: fixed; /* So it overlays but can be toggled */
   top: 0;
   left: 0;
-  width: 100%;
+  width: 250px; /* Example fixed width */
   height: 100vh;
   background: #f8f9fa;
   z-index: 999;
-  display: none;
+  display: none; /* Hidden by default */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateX(-100%); /* Hide offscreen by default */
+  transition: transform 0.3s ease;
 }
 
 .mobile-menu.active {
-  display: flex;
+  display: flex; /* Switch to flex - or you can rely on transform alone */
+  transform: translateX(0%); /* Slides into view */
 }
 
 .mobile-nav-links {
   list-style: none;
-  text-align: center;
   padding: 0;
 }
 
@@ -114,6 +118,47 @@ section {
 
 .mobile-nav-links .nav-item:hover {
   color: #007bff;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Animation */
+
+.hamburger,
+.hamburger.is-open {
+  position: fixed; /* or absolute within the nav container */
+  top: 20px;
+  right: 20px;
+  z-index: 1001; /* higher than the .mobile-menu's 999 */
+}
+
+.hamburger.is-open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Responsive Fixes */
@@ -171,20 +216,19 @@ section {
 }
 
 .hero-section img {
-  max-width: 70%; /* Reduce image size */
-  border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  animation: float 5s ease-in-out infinite; /* Subtle floating animation */
+  max-width: 100%;
+  margin-top: 2rem;
+  animation: float 3s ease-in-out infinite;
 }
 
-/* Floating Animation */
+/* Smooth floating animation */
 @keyframes float {
   0%,
   100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -336,6 +380,12 @@ section {
   flex-wrap: wrap;
 }
 
+.filters .filter-btn {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+
 .filter-btn {
   padding: 10px 20px;
   border: none;
@@ -352,11 +402,9 @@ section {
   color: white;
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.skills-grid .skill-item {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
 }
 
 .skill-item {
@@ -391,55 +439,86 @@ section {
   color: #333;
 }
 
+@media (max-width: 768px) {
+  .skills-grid .skill-item {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
 /* Projects Section */
 .projects-section {
-  background: radial-gradient(circle at top left, #f8f9fa, #e8f5ff);
+  background: linear-gradient(to bottom, #f8f9fa, #eaf4fc);
+  padding: 80px 0;
 }
 
 .project-card {
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-img-wrapper {
-  height: 350px; /* Fixed height */
   overflow: hidden;
+  border-radius: 12px 12px 0 0;
 }
 
 .project-img-wrapper img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-img-wrapper img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .project-title {
   font-size: 1.2rem;
   color: #007bff;
-  margin-top: 15px;
   margin-bottom: 10px;
 }
 
-.card-body .btn {
-  font-size: 0.9rem;
-  padding: 8px 15px;
-  border-radius: 50px;
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.card-body .btn i {
-  margin-right: 5px;
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-img-wrapper img {
+    height: 150px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-section {
+    padding: 60px 20px;
+  }
+
+  .project-card {
+    border-radius: 8px;
+  }
+
+  .project-img-wrapper img {
+    height: 120px;
+  }
 }
 
 /* Footer Section */
@@ -502,13 +581,14 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
   .timeline::before {
-    left: 10%;
+    left: 0;
   }
 
   .timeline-item {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    left: 0;
+    padding-left: 2rem;
+    text-align: left;
   }
 
   .timeline-item:nth-child(even) {
@@ -516,7 +596,8 @@ section {
   }
 
   .timeline-icon {
-    left: 10%;
+    left: 0;
+    transform: translateX(-50%);
   }
 
   .timeline-content {

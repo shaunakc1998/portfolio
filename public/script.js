@@ -1,9 +1,11 @@
-// Toggle Mobile Menu
-const menuToggle = document.getElementById("menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active"); // Toggle visibility
+    menuToggle.classList.toggle("is-open"); // Animate hamburger button
+  });
 });
 
 // Skills Filter Functionality (Without "All" Filter)
