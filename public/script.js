@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Typewriter Effect
-const words = ["Experiences", "Dreams", "Solutions", "Stories"];
+const words = ["Dreams", "Solutions", "Innovation"];
 let wordIndex = 0;
 let charIndex = 0;
 const speed = 150; // Typing speed in milliseconds
