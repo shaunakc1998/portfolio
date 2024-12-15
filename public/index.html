@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar custom-navbar fixed-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Brand Logo -->
+        <a href="#hero" class="navbar-brand fw-bold fs-3">MyBrand</a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links d-none d-lg-flex mb-0">
+          <li><a href="#hero" class="nav-item">Home</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button class="hamburger d-lg-none" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu d-lg-none" id="mobile-menu">
+        <ul class="mobile-nav-links mb-0">
+          <li><a href="#hero" class="nav-item">Home</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+      <div class="container text-center text-lg-start">
+        <div class="row align-items-center">
+          <!-- Hero Content -->
+          <div class="col-lg-6">
+            <h1 class="display-2 fw-bold text-dark">
+              Create <span class="highlight">Experiences</span><br />
+              That Matter
+            </h1>
+            <p class="lead text-muted mt-3">
+              I build immersive digital experiences that combine creativity,
+              technology, and a human touch.
+            </p>
+            <div class="mt-4">
+              <a
+                href="#experience"
+                class="btn btn-primary btn-lg shadow-lg rounded-pill px-5 py-3 me-3"
+              >
+                See My Work
+              </a>
+              <a
+                href="#contact"
+                class="btn btn-outline-dark btn-lg shadow-lg rounded-pill px-5 py-3"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+          <!-- Hero Image -->
+          <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            <!-- Replace 'your-image.jpg' with your actual image -->
+            <img
+              src="assets/cari.webp"
+              alt="Your Profile"
+              class="img-fluid rounded-circle shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section
+      id="experience"
+      class="experience-section d-flex align-items-center"
+    >
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Experience</h2>
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-year">2024 - Current</h3>
+              <h4 class="timeline-title">Product lead - Software</h4>
+              <h5 class="company-name text-muted">Fuel AI</h5>
+              <p>
+                At Fuel AI, I am leading the development of a B2M data
+                marketplace platform, leveraging data-driven strategies and
+                scalable technologies to enhance user engagement and drive
+                revenue growth.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 2 -->
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-year">2023 - 2024</h3>
+              <h4 class="timeline-title">Product Manager & Analyst</h4>
+              <h5 class="company-name text-muted">Company Name</h5>
+              <p>
+                Managed cross-functional teams to develope a platform analyzing
+                10M+ records to identify expungement eligibility, improving
+                access to jobs, housing, and voting rights.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 3 -->
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-year">2020 - 2022</h3>
+              <h4 class="timeline-title">Co-Founder & Product Lead</h4>
+              <h5 class="company-name text-muted">Tiffeast Services</h5>
+              <p>
+                Founded and scaled a B2C homemade meal delivery platform,
+                bridging the gap in the unstructured home food industry through
+                strategic product development and data analytics.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 4 -->
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="600">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-year">2021 - 2021</h3>
+              <h4 class="timeline-title">Data Analyst Intern</h4>
+              <h5 class="company-name text-muted">Motilal Oswal</h5>
+              <p>
+                Developed financial models and managed diversified portfolios,
+                leveraging data-driven insights to drive strategic asset and
+                portfolio growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section d-flex align-items-center">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Skills</h2>
+        <!-- Filter Buttons (Removed "All" Button) -->
+        <div class="filters text-center mb-4">
+          <!-- Removed the "All" filter button -->
+          <button class="filter-btn active" data-filter="programming">
+            Programming & Scripting
+          </button>
+          <button class="filter-btn active" data-filter="frameworks">
+            Frameworks & Libraries
+          </button>
+          <button class="filter-btn" data-filter="data">
+            Data Analysis & AI Tools
+          </button>
+          <button class="filter-btn" data-filter="cloud">
+            Cloud & Databases
+          </button>
+          <button class="filter-btn" data-filter="development">
+            Development & Collaboration Tools
+          </button>
+        </div>
+        <!-- Skills Grid -->
+        <div class="skills-grid row">
+          <!-- Programming & Development -->
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item programming active"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/python.svg" class="card-img-top" alt="Python" />
+              <div class="card-body text-center">
+                <p class="card-text">Python</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item programming active"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card skill-card">
+              <img src="assets/java.svg" class="card-img-top" alt="Java" />
+              <div class="card-body text-center">
+                <p class="card-text">Java</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item programming active"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card skill-card">
+              <img src="assets/js.svg" class="card-img-top" alt="JavaScript" />
+              <div class="card-body text-center">
+                <p class="card-text">JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item programming active"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/typescript.svg"
+                class="card-img-top"
+                alt="TypeScript"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">TypeScript</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item programming active"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="card skill-card">
+              <img src="assets/html.svg" class="card-img-top" alt="HTML" />
+              <div class="card-body text-center">
+                <p class="card-text">HTML</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item programming active"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="card skill-card">
+              <img src="assets/css.svg" class="card-img-top" alt="CSS" />
+              <div class="card-body text-center">
+                <p class="card-text">CSS</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item frameworks active"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/react.svg" class="card-img-top" alt="React" />
+              <div class="card-body text-center">
+                <p class="card-text">React</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item frameworks active"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/next.svg" class="card-img-top" alt="Next" />
+              <div class="card-body text-center">
+                <p class="card-text">Next.js</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item frameworks active"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/node.svg" class="card-img-top" alt="Node" />
+              <div class="card-body text-center">
+                <p class="card-text">Node.js</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item frameworks active"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="card skill-card">
+              <img src="assets/graph.svg" class="card-img-top" alt="GraphQL" />
+              <div class="card-body text-center">
+                <p class="card-text">GraphQL</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item frameworks active"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/streamlit.png"
+                class="card-img-top"
+                alt="Streamlit"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Streamlit</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item frameworks active"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/bootstrap.svg"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Bootstrap</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Analysis & AI Tools -->
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/tableau.svg"
+                class="card-img-top"
+                alt="Tableau"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Tableau</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/pbi.png" class="card-img-top" alt="Power BI" />
+              <div class="card-body text-center">
+                <p class="card-text">Power BI</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/googleanlytics.svg"
+                class="card-img-top"
+                alt="Google Analytics"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Google Analytics</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/looker.png"
+                class="card-img-top"
+                alt="Looker Studio"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Looker Studio</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/excel.svg"
+                class="card-img-top"
+                alt="Microsoft Excel"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Microsoft Excel</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/openai.svg"
+                class="card-img-top"
+                alt="OpenAI API"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">OpenAI API</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/claude.svg"
+                class="card-img-top"
+                alt="Claude API"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Claude API</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/pinecone.svg"
+                class="card-img-top"
+                alt="Pinecone"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Pinecone</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item data"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div class="card skill-card">
+              <img src="assets/chroma.svg" class="card-img-top" alt="Chroma" />
+              <div class="card-body text-center">
+                <p class="card-text">Chroma</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more data analysis skills as needed -->
+
+          <!-- Cloud & Databases -->
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/gcp.svg"
+                class="card-img-top"
+                alt="Google Cloud Platform"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Google Cloud Platform</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/firebase.svg"
+                class="card-img-top"
+                alt="Firebase"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Firebase</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/docker.svg" class="card-img-top" alt="Docker" />
+              <div class="card-body text-center">
+                <p class="card-text">Docker</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/kuber.svg"
+                class="card-img-top"
+                alt="kubernetes"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Kubernetes</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/bigq.svg" class="card-img-top" alt="BigQuery" />
+              <div class="card-body text-center">
+                <p class="card-text">BigQuery</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card skill-card">
+              <img src="assets/aws.svg" class="card-img-top" alt="AWS" />
+              <div class="card-body text-center">
+                <p class="card-text">AWS</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/databricks.svg"
+                class="card-img-top"
+                alt="Databricks"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Databricks</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="card skill-card">
+              <img src="assets/mysql.svg" class="card-img-top" alt="MySQL" />
+              <div class="card-body text-center">
+                <p class="card-text">MySQL</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item cloud"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/oracle.svg"
+                class="card-img-top"
+                alt="Oracle SQL"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Oracle SQL</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Development & Collaboration Tools -->
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item development"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card skill-card">
+              <img src="assets/github.svg" class="card-img-top" alt="GitHub" />
+              <div class="card-body text-center">
+                <p class="card-text">GitHub</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item development"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img src="assets/jira.svg" class="card-img-top" alt="Jira" />
+              <div class="card-body text-center">
+                <p class="card-text">Jira</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item development"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/confluence.svg"
+                class="card-img-top"
+                alt="Confluence"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Confluence</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item development"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card skill-card">
+              <img src="assets/asana.svg" class="card-img-top" alt="Asana" />
+              <div class="card-body text-center">
+                <p class="card-text">Asana</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-2 skill-item development"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card skill-card">
+              <img
+                src="assets/figma.svg"
+                class="card-img-top"
+                alt="Databricks"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Figma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section d-flex align-items-center">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Projects</h2>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-12 col-md-6 col-lg-4 project-item" data-aos="zoom-in">
+            <div class="card project-card h-100">
+              <img
+                src="assets/brandkit.webp"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">AI BrandKit Generator</h5>
+                <a
+                  href="https://github.com/shaunakc1998/brandkit-ai"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 project-item"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="assets/recipe.webp"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">AI Driven Recipe Generator</h5>
+                <a
+                  href="https://github.com/shaunakc1998/recipe-ai"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 project-item"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="card project-card h-100">
+              <img src="assets/dht.webp" class="card-img-top" alt="Project 3" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Chord Algorithm File Sharing System</h5>
+                <a
+                  href="https://github.com/shaunakc1998/dht-chordshare"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 project-item"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="assets/market.webp"
+                class="card-img-top"
+                alt="Project 4"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Marketing and Profitability Analysis</h5>
+                <a
+                  href="https://github.com/shaunakc1998/product-profitability"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 project-item"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="assets/tiffeasts.webp"
+                class="card-img-top"
+                alt="Project 5"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Tiffeasts Wireframe Designs</h5>
+                <a
+                  href="https://github.com/shaunakc1998/tiffeasts-design"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 project-item"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="assets/image.webp"
+                class="card-img-top"
+                alt="Project 6"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  Image Processing and Detection Pipeline
+                </h5>
+                <a
+                  href="https://github.com/shaunakc1998/face-recognition"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 7 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 project-item"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="assets/scuflix.webp"
+                class="card-img-top"
+                alt="Project 7"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">SCUFLix</h5>
+                <a
+                  href="https://github.com/shaunakc1998/scuflix"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5">
+      <div class="container text-center">
+        <h5 class="footer-title mb-4">Let's Connect</h5>
+        <!-- Social Media Links -->
+        <div class="social-icons mb-4">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="social-link me-4"
+          >
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a
+            href="https://github.com/shaunakc1998"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </div>
+        <!-- Footer Bottom -->
+        <p class="footer-text mt-3 mb-0">
+          &copy; 2024 <span class="fw-bold">MyBrand</span>. Designed with ❤️ and
+          creativity.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
