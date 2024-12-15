@@ -419,11 +419,13 @@ section {
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px auto;
+  object-fit: contain;
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .skill-card img {
@@ -434,7 +436,7 @@ section {
 }
 
 .skill-card p {
-  margin-bottom: 15px;
+  margin: 0;
   font-size: 1rem;
   color: #333;
 }
@@ -525,20 +527,21 @@ section {
 .footer-section {
   background: linear-gradient(135deg, #343a40 0%, #212529 100%);
   color: #f8f9fa;
+  padding: 2rem 0; /* Enough padding to avoid content cramming */
 }
 
-.footer-title {
+.footer-section .footer-title {
   font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  gap: 20px; /* spacing between icons */
+  margin-bottom: 1.5rem;
 }
 
 .social-link {
@@ -547,7 +550,8 @@ section {
 }
 
 .social-link i {
-  transition: transform 0.3s ease;
+  font-size: 2.5rem; /* Adjust as needed */
+  transition: transform 0.3s;
 }
 
 .social-link:hover {
@@ -572,9 +576,15 @@ section {
   color: #007bff;
 }
 
-@media (max-width: 768px) {
-  .social-icons a {
+@media (max-width: 576px) {
+  .footer-section .footer-title {
+    font-size: 1.5rem;
+  }
+  .footer-section .social-link i {
     font-size: 2rem;
+  }
+  .footer-text {
+    font-size: 0.85rem;
   }
 }
 
