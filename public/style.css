@@ -124,6 +124,27 @@ section {
 }
 
 /* Hero Section Enhancements */
+
+/* Blinking Cursor */
+.highlight::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+  color: #007bff;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
 .hero-section {
   background: linear-gradient(to right, #f8f9fa, #e9f4ff);
   padding: 100px 0;

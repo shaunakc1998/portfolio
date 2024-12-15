@@ -47,3 +47,36 @@ document.addEventListener("DOMContentLoaded", () => {
     defaultFilterButton.click();
   }
 });
+
+// Typewriter Effect
+const words = ["Experiences", "Dreams", "Solutions", "Stories"];
+let wordIndex = 0;
+let charIndex = 0;
+const speed = 150; // Typing speed in milliseconds
+const heroSpan = document.querySelector(".highlight");
+
+function typeWriter() {
+  if (charIndex < words[wordIndex].length) {
+    heroSpan.textContent += words[wordIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWriter, speed);
+  } else {
+    setTimeout(eraseWord, 1000); // Pause before erasing
+  }
+}
+
+function eraseWord() {
+  if (charIndex > 0) {
+    heroSpan.textContent = words[wordIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseWord, speed / 2);
+  } else {
+    wordIndex = (wordIndex + 1) % words.length; // Move to the next word
+    setTimeout(typeWriter, speed);
+  }
+}
+
+// Start the typewriter effect on load
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(typeWriter, speed);
+});
