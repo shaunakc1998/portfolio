@@ -46,13 +46,30 @@ section {
 .nav-links .nav-item {
   font-size: 1rem;
   color: #333;
-  text-transform: uppercase;
   text-decoration: none;
-  transition: color 0.3s;
+  text-transform: uppercase;
+  font-weight: 500; /* Slightly thicker text */
+  position: relative; /* For hover underline effect */
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s ease;
 }
 
 .nav-links .nav-item:hover {
-  color: #007bff;
+  color: #007bff; /* Change text color on hover */
+}
+
+.nav-links .nav-item:hover::after {
+  width: 100%; /* Underline expands on hover */
 }
 
 /* Hamburger Menu */
@@ -108,16 +125,31 @@ section {
 }
 
 .mobile-nav-links .nav-item {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #333;
   margin: 15px 0;
   text-transform: uppercase;
-  text-decoration: none;
+  position: relative;
   transition: color 0.3s ease;
+}
+
+.mobile-nav-links .nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s ease;
 }
 
 .mobile-nav-links .nav-item:hover {
   color: #007bff;
+}
+
+.mobile-nav-links .nav-item:hover::after {
+  width: 100%;
 }
 
 /* Hamburger Button */
